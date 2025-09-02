@@ -1,13 +1,15 @@
 name: Step 0
 
 on:
+  pull_request:
+    types: 
+      -synchronize
+      
   push:
     branches:
       - main
 
-  pull_request:
-    types: 
-      -main
+
 
 permissions:
   contents: write
